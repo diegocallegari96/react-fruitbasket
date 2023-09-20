@@ -1,4 +1,4 @@
-
+import "./FruitCounter.css"
 
 
 function FruitsCounter({ fruitType, count, setCount }) {
@@ -14,11 +14,13 @@ function FruitsCounter({ fruitType, count, setCount }) {
 
 
     return (
+        <div className="container">
         <div className="fruitcard">
             <span>{fruitType}</span>
             <button onClick={increaseCount}>+</button>
             <span>{count}</span>
             <button onClick={decreaseCount}>-</button>
+        </div>
         </div>
     )
 }
