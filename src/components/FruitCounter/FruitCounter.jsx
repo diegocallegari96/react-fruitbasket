@@ -1,26 +1,23 @@
-import React, { useState } from 'react';
 
-function FruitsCounter(props) {
-    const [fruitCount, setFruitCount] = useState(props.count, props.setCount);
 
-    console.log(`${props.fruittype} has a count of: ${fruitCount}`);
 
-    const increaseCount = () => {
-        setFruitCount(fruitCount + 1);
-    };
+function FruitsCounter({ fruitType, count, setCount }) {
+        const increaseCount = () => {
+            setCount(count + 1);
+        };
 
-    const decreaseCount = () => {
-        if (fruitCount > 0) {
-            setFruitCount(fruitCount - 1);
-        }
-    };
+        const decreaseCount = () => {
+            if (count > 0) {
+                setCount(count - 1);
+            }
+        };
 
 
     return (
         <div className="fruitcard">
-            <span>{props.fruittype}</span>
+            <span>{fruitType}</span>
             <button onClick={increaseCount}>+</button>
-            <span>{fruitCount}</span>
+            <span>{count}</span>
             <button onClick={decreaseCount}>-</button>
         </div>
     )
