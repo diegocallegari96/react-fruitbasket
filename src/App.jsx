@@ -15,6 +15,7 @@ function App() {
         setStrawberriesCount(0);
         setApplesCount(0);
         setKiwisCount(0);
+        console.log("hoi")
     };
 
 
@@ -24,18 +25,27 @@ function App() {
         <FruitsCounter fruittype="&#127827; Aardbeijen"
                        count={strawberriesCount}
                        setCount={setStrawberriesCount}
+                       className="fruitcard"
+                       onReset={resetCounts}
+
         />
         <FruitsCounter fruittype="&#127820; Bananen"
                        count={bananasCount}
                        setCount={setBananasCount}
+                       className="fruitcard"
+                       onReset={resetCounts}
         />
         <FruitsCounter fruittype="&#127823; Appels"
                        count={applesCount}
                        setCount={setApplesCount}
+                       className="fruitcard"
+                       onReset={resetCounts}
         />
         <FruitsCounter fruittype="&#129373; Kiwi's"
                        count={kiwisCount}
                        setCount={setKiwisCount}
+                       className="fruitcard"
+                       onReset={resetCounts}
         />
         <button onClick={resetCounts}>Reset</button>
     </div>
