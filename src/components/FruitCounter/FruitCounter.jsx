@@ -2,6 +2,7 @@ import "./FruitCounter.css"
 
 
 function FruitsCounter({ fruitType, count, setCount }) {
+    console.log(`${fruitType} count: ${count}`)
         const increaseCount = () => {
             setCount(count + 1);
         };
