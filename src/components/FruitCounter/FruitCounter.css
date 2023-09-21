@@ -1,0 +1,57 @@
+/*.fruitcard {*/
+/*    box-sizing: border-box;*/
+/*    width: 80%;*/
+/*    height: 9rem;*/
+/*    border: solid red 1px;*/
+/*}*/
+
+/* In je CSS-bestand, bijvoorbeeld App.css */
+
+/* In je CSS-bestand, bijvoorbeeld App.css */
+
+/* In je CSS-bestand, bijvoorbeeld App.css */
+
+.container {
+    display: flex;
+    justify-content: center; /* Hiermee worden de blokken in het midden van het scherm geplaatst */
+    align-items: center; /* Hiermee worden de blokken verticaal gecentreerd */
+    height: 200px; /* Hiermee wordt de container de volledige hoogte van het scherm */
+}
+
+.fruitcard {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.fruitcard span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.fruitcard button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+}
+
+.fruitcard button:hover {
+    background-color: #45a049;
+}
+
